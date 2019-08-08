@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: vn.amabay.features.register.WhenRegisterNewAccount
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.317 sec <<< FAILURE! - in vn.amabay.features.register.WhenRegisterNewAccount
-launch_web_application(vn.amabay.features.register.WhenRegisterNewAccount)  Time elapsed: 1.288 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.197 sec <<< FAILURE! - in vn.amabay.features.register.WhenRegisterNewAccount
+launch_web_application(vn.amabay.features.register.WhenRegisterNewAccount)  Time elapsed: 1.12 sec  <<< ERROR!
 java.lang.NoSuchMethodError: com.google.common.collect.ImmutableList.toImmutableList()Ljava/util/stream/Collector;
 	at vn.amabay.features.register.WhenRegisterNewAccount.launch_web_application(WhenRegisterNewAccount.java:29)
 

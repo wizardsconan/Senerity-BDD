@@ -3,7 +3,7 @@ package vn.amabay.pages;
 import net.serenitybdd.core.pages.PageObject;
 
 public class RegisterPage extends PageObject{
-	private static final String ALERT_DANGER_TEXT = "//div[@class=\'alert alert-danger text-center\']";
+	private static final String ALERT_DANGER_TEXT = "//div[@class='alert alert-danger text-center']";
 
 	private static final String CORFIRM_PASSWORD = "Nhập lại mật khẩu";
 
