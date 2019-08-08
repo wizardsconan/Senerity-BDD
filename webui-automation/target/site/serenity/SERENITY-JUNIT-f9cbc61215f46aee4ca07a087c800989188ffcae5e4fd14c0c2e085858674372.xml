@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="vn.amabay.features.register.WhenRegisterNewAccount" skipped="0" tests="1" time="1.27" timestamp="2019-08-08 03:30:32"><testcase classname="vn.amabay.features.register.WhenRegisterNewAccount" name="Launch web application"><error message="com.google.common.collect.ImmutableList.toImmutableList()Ljava/util/stream/Collector;" type="java.lang.NoSuchMethodError">com.google.common.collect.ImmutableList.toImmutableList()Ljava/util/stream/Collector;</error><system-err>com.google.common.collect.ImmutableList.toImmutableList()Ljava/util/stream/Collector;&#13;
+vn.amabay.steps.serenity.HomeSteps.visit_application(HomeSteps.java:10)&#13;
+vn.amabay.features.register.WhenRegisterNewAccount.launch_web_application(WhenRegisterNewAccount.java:29)&#13;
+</system-err></testcase></testsuite>

@@ -1,12 +1,11 @@
 package vn.amabay.steps.serenity;
 
-import static org.junit.Assert.assertEquals;
+//import static org.hamcrest.MatcherAssert.assertThat; 
+//import static org.hamcrest.Matchers.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import net.thucydides.core.annotations.Step;
 import vn.amabay.pages.RegisterPage;
-import static org.hamcrest.MatcherAssert.assertThat; 
-import static org.hamcrest.Matchers.*;
-import static org.assertj.core.api.Assertions.*;
 
 public class RegisterSteps {
 	
