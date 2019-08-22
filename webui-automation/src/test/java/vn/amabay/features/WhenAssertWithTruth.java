@@ -1,4 +1,4 @@
-package vn.amabay.features;
+/*package vn.amabay.features;
 import static com.google.common.truth.Truth.assertThat;
 
 import java.util.Arrays;
@@ -29,4 +29,4 @@ public class  WhenAssertWithTruth {
 	}
 	
 
-}
+}*/

@@ -5,18 +5,19 @@ package vn.amabay.steps.serenity;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import net.thucydides.core.annotations.Step;
+import vn.amabay.models.Account;
 import vn.amabay.pages.RegisterPage;
 
 public class RegisterSteps {
 	
 	RegisterPage onRegisterPage;
 	
-	public void register_new_Account(String fullName, String email, String Phone,String pwd, String cofirmPwd) {
-		enter_full_name(fullName);
-		enter_email_address(email);
-		enter_phone_number(Phone);
-		enter_password(pwd);
-		enter_confirm_password(cofirmPwd);
+	public void register_new_Account_With(Account account) {
+		enter_full_name(account.getFullName());
+		enter_email_address(account.getEmail());
+		enter_phone_number(account.getPhone());
+		enter_password(account.getPassword());
+		enter_confirm_password(account.getRePassword());
 		click_on_register_button();
 	}
 	public void click_on_register_button() {

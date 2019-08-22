@@ -1,10 +1,9 @@
-vn\amabay\features\WhenAssertWithTruth.class
 vn\amabay\steps\serenity\LoginSteps.class
 vn\amabay\steps\serenity\HomeSteps.class
+vn\amabay\features\register\RadomStringTest.class
 vn\amabay\pages\RegisterPage$Target.class
+vn\amabay\models\Account.class
 vn\amabay\pages\RegisterPage.class
 vn\amabay\pages\HomePage.class
-vn\amabay\steps\serenity\RegisterSteps.class
-vn\amabay\features\register\WhenRegisterNewAccount.class
 vn\amabay\features\browser\WhenOpenLinkTheWeb.class
 vn\amabay\pages\LoginPage.class

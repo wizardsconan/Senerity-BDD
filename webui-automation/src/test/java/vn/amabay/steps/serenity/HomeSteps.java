@@ -14,5 +14,9 @@ public class HomeSteps {
 	public void click_on_login_link() {
 		onHomePage.clickOnLoginLink();
 	}
+/*	public void select_states(String... states) {
+		// TODO Auto-generated method stub
+		onHomePage.SelectMultiState(states);
+	}*/
 
 }
