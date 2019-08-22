@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="vn.amabay.features.register.WhenRegisterNewAccount" time="3.955" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="vn.amabay.features.register.WhenRegisterNewAccount" time="4.225" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Progam file\jre\bin"/>
@@ -65,7 +65,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="vn.amabay.features.register.WhenRegisterNewAccount" classname="vn.amabay.features.register.WhenRegisterNewAccount" time="0.697">
+  <testcase name="vn.amabay.features.register.WhenRegisterNewAccount" classname="vn.amabay.features.register.WhenRegisterNewAccount" time="0.623">
     <failure message="The page object class vn.amabay.pages.HomePage looks dodgy:&#10;Failed to instantiate page (java.lang.NullPointerException: No provider implementation was specified in &apos;webdriver.provided.&apos;vn.amabuy.customedriver.MyCustomeDriver)" type="net.thucydides.core.pages.WrongPageError">net.thucydides.core.pages.WrongPageError: 
 The page object class vn.amabay.pages.HomePage looks dodgy:
 Failed to instantiate page (java.lang.NullPointerException: No provider implementation was specified in 'webdriver.provided.'vn.amabuy.customedriver.MyCustomeDriver)
