@@ -33,6 +33,7 @@ public class WhenRegisterNewAccount {
 	 RegisterSteps registerSteps;
 	Account info= new Account("ABCD","abcd@gmail.com","0984763622","123456","1234567");
 	@Test
+	@WithTag("register")
 	public void launch_web_application() {
 		String errMsg="Mật khẩu xác nhận không chính xác";
 		onPage.visit_application();
