@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="vn.amabay.features.register.WhenRegisterNewAccount" time="4.225" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="vn.amabay.features.register.WhenRegisterNewAccount" time="3.745" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Progam file\jre\bin"/>
@@ -65,10 +65,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="vn.amabay.features.register.WhenRegisterNewAccount" classname="vn.amabay.features.register.WhenRegisterNewAccount" time="0.623">
-    <failure message="The page object class vn.amabay.pages.HomePage looks dodgy:&#10;Failed to instantiate page (java.lang.NullPointerException: No provider implementation was specified in &apos;webdriver.provided.&apos;vn.amabuy.customedriver.MyCustomeDriver)" type="net.thucydides.core.pages.WrongPageError">net.thucydides.core.pages.WrongPageError: 
+  <testcase name="vn.amabay.features.register.WhenRegisterNewAccount" classname="vn.amabay.features.register.WhenRegisterNewAccount" time="0.557">
+    <failure message="The page object class vn.amabay.pages.HomePage looks dodgy:&#10;Failed to instantiate page (java.lang.RuntimeException: Could not instantiate the custom webdriver provider of type vn.amabuy.customedriver.MyCustomeDriver)" type="net.thucydides.core.pages.WrongPageError">net.thucydides.core.pages.WrongPageError: 
 The page object class vn.amabay.pages.HomePage looks dodgy:
-Failed to instantiate page (java.lang.NullPointerException: No provider implementation was specified in 'webdriver.provided.'vn.amabuy.customedriver.MyCustomeDriver)
+Failed to instantiate page (java.lang.RuntimeException: Could not instantiate the custom webdriver provider of type vn.amabuy.customedriver.MyCustomeDriver)
 </failure>
     <system-err><![CDATA[[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
 
@@ -88,9 +88,8 @@ Failed to instantiate page (java.lang.NullPointerException: No provider implemen
 -------------------------------------------------------------------------------------
 
 [main] WARN net.thucydides.core.pages.Pages - Failed to instantiate page of type class vn.amabay.pages.HomePage ({})
-java.lang.NullPointerException: No provider implementation was specified in 'webdriver.provided.'vn.amabuy.customedriver.MyCustomeDriver
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:897)
-	at net.thucydides.core.webdriver.ProvidedDriverConfiguration.getDriverSource(ProvidedDriverConfiguration.java:41)
+java.lang.RuntimeException: Could not instantiate the custom webdriver provider of type vn.amabuy.customedriver.MyCustomeDriver
+	at net.thucydides.core.webdriver.ProvidedDriverConfiguration.getDriverSource(ProvidedDriverConfiguration.java:47)
 	at net.thucydides.core.webdriver.WebDriverFacade.getDriverClass(WebDriverFacade.java:94)
 	at net.thucydides.core.webdriver.WebDriverType.isMobile(WebDriverType.java:9)
 	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.platformFor(ElementLocatorFactorySelector.java:48)

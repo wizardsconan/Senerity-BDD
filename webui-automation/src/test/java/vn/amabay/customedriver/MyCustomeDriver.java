@@ -15,10 +15,11 @@ public class MyCustomeDriver implements DriverSource {
         // 1 profile
 		        	FirefoxProfile profile = new FirefoxProfile();
 		        	profile.setPreference("browser.startup.homepage", "http://www.google.com");
-		        	profile.setPreference("browser.privatebrowsing.autostart", true);
+		        	//profile.setPreference("browser.privatebrowsing.autostart", true);
 		        	//2 capaibilities
 		        	DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		        	capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+		        //	capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
 		        	//3.options
 		        	FirefoxOptions options = new FirefoxOptions(capabilities);
 		        	// FirefoxOptions

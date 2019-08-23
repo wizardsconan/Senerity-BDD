@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: vn.amabay.features.register.WhenRegisterNewAccount
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.225 sec <<< FAILURE! - in vn.amabay.features.register.WhenRegisterNewAccount
-vn.amabay.features.register.WhenRegisterNewAccount  Time elapsed: 0.623 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.745 sec <<< FAILURE! - in vn.amabay.features.register.WhenRegisterNewAccount
+vn.amabay.features.register.WhenRegisterNewAccount  Time elapsed: 0.557 sec  <<< FAILURE!
 net.thucydides.core.pages.WrongPageError: 
 The page object class vn.amabay.pages.HomePage looks dodgy:
-Failed to instantiate page (java.lang.NullPointerException: No provider implementation was specified in 'webdriver.provided.'vn.amabuy.customedriver.MyCustomeDriver)
+Failed to instantiate page (java.lang.RuntimeException: Could not instantiate the custom webdriver provider of type vn.amabuy.customedriver.MyCustomeDriver)
 
