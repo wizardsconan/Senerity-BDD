@@ -100,6 +100,7 @@
                     </includes>
                     <argLine>-Xmx512m</argLine>
 
+
                 </configuration>
                 <executions>
                     <execution>
@@ -135,4 +136,38 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+	<profile>
+		<id>parallel-mode</id>
+	<build>
+	<plugins>
+ 		<plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/Test*.java</include>
+                        <include>**/When*.java</include>
+                        <include>**/*Story.java</include>
+                    </includes>
+                    <argLine>-Xmx512m</argLine>
+                    <parallel>classes</parallel>
+                    <threadCount>1</threadCount>
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+	</plugins>
+	</build>
+</profile>
+</profiles>
+    
 </project>

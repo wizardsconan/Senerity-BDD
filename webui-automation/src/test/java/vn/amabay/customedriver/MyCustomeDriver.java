@@ -1,4 +1,4 @@
-package vn.amabay.customedriver;
+/*package vn.amabay.customedriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -35,4 +35,4 @@ public class MyCustomeDriver implements DriverSource {
     public boolean takesScreenshots() {
         return true;
     }
-}
+}*/

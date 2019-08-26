@@ -1,0 +1,47 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="csrf-param" content="_csrf-frontend" /><meta name="csrf-token" content="09GpIpc7VdNYje3GjCtfjf0Oi0j6cDiKwa6TpAXvQlmAl-pU-1Bn6yvmmvbOXQvIojzIcLEEe7mC5-rnN9h1Kg==" /><title>Đăng nhập</title><link href="/assets/minify/e1c871c6284c7f9f938054a111612a44.css" rel="stylesheet" /> <script src="/assets/9630f276/vue.min.js"></script> <script src="/assets/9630f276/vue2-filters.min.js"></script><style type="text/css">.auth-modal .modal-dialog .modal-body .right {
+        background-color: #f8f8f8;
+    }
+
+    .btn-auth:hover {
+        color:#fff;
+    }</style></head><body id="body"><header><div class="auth-header"><div class="container"><div class="logo"><a href="/"><img src="/static/images/logo/amabuy-5.png" alt="Amabuy.vn" title="Amabuy.vn" /></a></div><div class="action">
+<a href="/register" class="btn btn-auth">Đăng ký tài khoản</a></div></div></div></header> <script type="text/javascript">var refer = 'https://www.amabuy.vn/';</script> <div id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade auth-modal show"><div role="document" class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="left"><div class="modal-title">Đăng nhập</div><div class="form-box"><div class="form-group"><i class="icon user"></i> <input type="text" placeholder="Email hoặc số điện thoại" class="form-control" /></div><div class="form-group password"><i class="icon lock"></i> <input placeholder="Mật khẩu" type="password" class="form-control" /> <i class="icon-view"></i></div><div class="more-action"><div class="form-check"><input type="checkbox" class="form-check-input" /> <label for="remember" class="form-check-label">Ghi nhớ</label></div> <a href="/forgot">Quên mật khẩu ?</a></div> <button class="btn btn-login">Đăng nhập</button></div><div class="or">Hoặc đăng nhập với</div><div class="social-login"><button class="btn btn-fb"><span><i class="fa fa-facebook-square"></i></span>Facebook</button> <button class="btn btn-google"><span><i class="fa fa-google"></i></span>Google</button></div></div><div class="right"><div class="info-title">Quyền lợi khi đăng kí thành viên</div><ul><li>Mua hàng nhanh chóng</li><li>Giá ưu đãi cho thành viên</li><li>Theo dõi đơn hàng dễ dàng</li><li>Tích điểm cho thành viên tích cực</li><li>Hưởng các chương trình ưu đãi đặc biệt cho thành viên đăng ký</li></ul></div></div></div></div></div> <script type="text/javascript">var vueLogin = new Vue({
+        el: '#login',
+        data: {
+            loginForm: {
+                username: '',
+                password: '',
+                remember: true
+            },
+            viewPassword: false,
+            errorMessages: []
+        },
+        methods: {
+            showPass: function () {
+                this.viewPassword = !this.viewPassword;
+            },
+            login: function () {
+                this.errorMessages = [];
+                if (this.loginForm.username == '' || this.loginForm.password == '') {
+                    this.errorMessages = ['Vui lòng nhập thông tin đăng nhập'];
+                } else {
+                    $.ajax({
+                        type: 'POST',
+                        url: "/auth/service/login",
+                        data: vueLogin.$data.loginForm,
+                        async: true,
+                        success: function (data) {
+                            if (data.data) {
+                                window.location = refer;
+                            } else {
+                                console.log(data.message);
+                                Vue.set(vueLogin.$data, 'errorMessages', [data.message]);
+                            }
+                        },
+                        error: function () {
+                        }
+                    });
+                }
+            }
+        }
+    });</script><script src="/assets/minify/ff130202980fd9983c73b658508954a3.js"></script></body></html>

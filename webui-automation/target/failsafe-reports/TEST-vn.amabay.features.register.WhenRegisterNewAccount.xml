@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="vn.amabay.features.register.WhenRegisterNewAccount" time="3.745" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="vn.amabay.features.register.WhenRegisterNewAccount" time="53.612" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Progam file\jre\bin"/>
@@ -36,17 +36,17 @@
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\hiennt26"/>
-    <property name="tags" value="register"/>
     <property name="user.timezone" value="Asia/Bangkok"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="hiennt26"/>
     <property name="java.class.path" value="C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="it.test" value="WhenRegisterNewAccount"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="D:\Progam file\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -Dtags=register"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -Dit.test=WhenRegisterNewAccount"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,11 +65,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="vn.amabay.features.register.WhenRegisterNewAccount" classname="vn.amabay.features.register.WhenRegisterNewAccount" time="0.557">
-    <failure message="The page object class vn.amabay.pages.HomePage looks dodgy:&#10;Failed to instantiate page (java.lang.RuntimeException: Could not instantiate the custom webdriver provider of type vn.amabuy.customedriver.MyCustomeDriver)" type="net.thucydides.core.pages.WrongPageError">net.thucydides.core.pages.WrongPageError: 
-The page object class vn.amabay.pages.HomePage looks dodgy:
-Failed to instantiate page (java.lang.RuntimeException: Could not instantiate the custom webdriver provider of type vn.amabuy.customedriver.MyCustomeDriver)
-</failure>
+  <testcase name="launch_web_application" classname="vn.amabay.features.register.WhenRegisterNewAccount" time="48.069">
+    <error message="Expected enabled element was not enabled&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CN-PTCN-HIENNT2&apos;, ip: &apos;10.2.68.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: 
+Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CN-PTCN-HIENNT2', ip: '10.2.68.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+	at vn.amabay.features.register.WhenRegisterNewAccount.launch_web_application(WhenRegisterNewAccount.java:40)
+</error>
     <system-err><![CDATA[[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
 
 -------------------------------------------------------------------------------------
@@ -87,52 +90,27 @@ Failed to instantiate page (java.lang.RuntimeException: Could not instantiate th
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-[main] WARN net.thucydides.core.pages.Pages - Failed to instantiate page of type class vn.amabay.pages.HomePage ({})
-java.lang.RuntimeException: Could not instantiate the custom webdriver provider of type vn.amabuy.customedriver.MyCustomeDriver
-	at net.thucydides.core.webdriver.ProvidedDriverConfiguration.getDriverSource(ProvidedDriverConfiguration.java:47)
-	at net.thucydides.core.webdriver.WebDriverFacade.getDriverClass(WebDriverFacade.java:94)
-	at net.thucydides.core.webdriver.WebDriverType.isMobile(WebDriverType.java:9)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.platformFor(ElementLocatorFactorySelector.java:48)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:41)
-	at net.thucydides.core.webdriver.ElementLocatorFactorySelector.getLocatorFor(ElementLocatorFactorySelector.java:31)
-	at net.thucydides.core.annotations.locators.SmartElementProxyCreator.proxyElements(SmartElementProxyCreator.java:21)
-	at net.thucydides.core.webdriver.DefaultPageObjectInitialiser.apply(DefaultPageObjectInitialiser.java:19)
-	at net.serenitybdd.core.pages.PageObject.setDriver(PageObject.java:166)
-	at net.serenitybdd.core.pages.PageObject.setDriver(PageObject.java:170)
-	at net.thucydides.core.pages.Pages.createFromSimpleConstructor(Pages.java:237)
-	at net.thucydides.core.pages.Pages.getCurrentPageOfType(Pages.java:204)
-	at net.thucydides.core.pages.Pages.getPage(Pages.java:90)
-	at net.thucydides.core.steps.PageObjectDependencyInjector.instantiatePageObjectIfNotAssigned(PageObjectDependencyInjector.java:55)
-	at net.thucydides.core.steps.PageObjectDependencyInjector.injectDependenciesInto(PageObjectDependencyInjector.java:33)
-	at net.thucydides.core.steps.StepFactory.injectOtherDependenciesInto(StepFactory.java:166)
-	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:156)
-	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:139)
-	at net.thucydides.core.steps.StepFactory.getNewStepLibraryFor(StepFactory.java:86)
-	at net.thucydides.core.steps.IndividualInstancesByDefaultStepCreationStrategy.initiateStepsFor(IndividualInstancesByDefaultStepCreationStrategy.java:16)
-	at net.thucydides.core.steps.StepAnnotations.instantiateAnyUnitiaializedSteps(StepAnnotations.java:76)
-	at net.thucydides.core.steps.StepAnnotations.instanciateScenarioStepFields(StepAnnotations.java:60)
-	at net.thucydides.core.steps.StepAnnotations.injectScenarioStepsInto(StepAnnotations.java:42)
-	at net.serenitybdd.junit.runners.SerenityRunner.injectScenarioStepsInto(SerenityRunner.java:636)
-	at net.serenitybdd.junit.runners.SerenityRunner.methodInvoker(SerenityRunner.java:599)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:273)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at net.serenitybdd.junit.runners.SerenityRunner.performRunChild(SerenityRunner.java:463)
-	at net.serenitybdd.junit.runners.SerenityRunner.runChild(SerenityRunner.java:438)
-	at net.serenitybdd.junit.runners.SerenityRunner.runChild(SerenityRunner.java:45)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at net.serenitybdd.junit.runners.SerenityRunner.run(SerenityRunner.java:242)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: When register new account
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: launch_web_application
+-------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 1
+Aug 26, 2019 1:48:40 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38) on port 32512
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Aug 26, 2019 1:48:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
 ]]></system-err>
   </testcase>
 </testsuite>

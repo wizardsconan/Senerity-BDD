@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="vn.amabay.features.register.WhenRegisterNewAccount" skipped="0" tests="1" time="48.03" timestamp="2019-08-26 01:48:39"><testcase classname="vn.amabay.features.register.WhenRegisterNewAccount" name="Launch web application"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+vn.amabay.pages.HomePage.clickOnLoginLink(HomePage.java:15)&#13;
+vn.amabay.steps.serenity.HomeSteps.click_on_login_link(HomeSteps.java:15)&#13;
+vn.amabay.features.register.WhenRegisterNewAccount.launch_web_application(WhenRegisterNewAccount.java:40)&#13;
+</system-err></testcase></testsuite>

@@ -12,7 +12,7 @@ import net.thucydides.core.annotations.WithTags;
 import vn.amabay.steps.serenity.HomeSteps;
 @WithTags({
 	@WithTag("parallel"),
-	@WithTag("firefox")
+	@WithTag("chrome")
 })
 @RunWith(SerenityRunner.class)
 public class WhenOpenLinkTheWeb {
@@ -22,8 +22,15 @@ public class WhenOpenLinkTheWeb {
 	@Steps
 	HomeSteps jacob;
 	@Test
+	@WithTag("web")
 	public void launch_web_application() {
 		jacob.visit_application();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//jacob.select_states("Alaska","New Mexico");
 	}
 

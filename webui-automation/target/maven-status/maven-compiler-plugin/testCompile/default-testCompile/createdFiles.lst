@@ -3,7 +3,6 @@ vn\amabay\steps\serenity\HomeSteps.class
 vn\amabay\features\register\RadomStringTest.class
 vn\amabay\pages\RegisterPage$Target.class
 vn\amabay\features\register\WhenRegisterNewAccount.class
-vn\amabay\customedriver\MyCustomeDriver.class
 vn\amabay\models\Account.class
 vn\amabay\MyPageObject.class
 vn\amabay\features\WhenSoftAssert.class

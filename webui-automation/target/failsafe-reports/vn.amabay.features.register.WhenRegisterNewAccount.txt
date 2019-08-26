@@ -1,9 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: vn.amabay.features.register.WhenRegisterNewAccount
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.745 sec <<< FAILURE! - in vn.amabay.features.register.WhenRegisterNewAccount
-vn.amabay.features.register.WhenRegisterNewAccount  Time elapsed: 0.557 sec  <<< FAILURE!
-net.thucydides.core.pages.WrongPageError: 
-The page object class vn.amabay.pages.HomePage looks dodgy:
-Failed to instantiate page (java.lang.RuntimeException: Could not instantiate the custom webdriver provider of type vn.amabuy.customedriver.MyCustomeDriver)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 53.612 sec <<< FAILURE! - in vn.amabay.features.register.WhenRegisterNewAccount
+launch_web_application(vn.amabay.features.register.WhenRegisterNewAccount)  Time elapsed: 48.069 sec  <<< ERROR!
+net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: 
+Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CN-PTCN-HIENNT2', ip: '10.2.68.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+	at vn.amabay.features.register.WhenRegisterNewAccount.launch_web_application(WhenRegisterNewAccount.java:40)
 
