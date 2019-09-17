@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="vn.amabay.features.alert.WhenUsserInteractAlertPop" skipped="0" tests="5" time="66.79" timestamp="2019-09-17 03:58:39"><testcase classname="vn.amabay.features.alert.WhenUsserInteractAlertPop" name="When alertbox pops up then click OK button to proceed"><error message="Could not instantiate class net.thucydides.core.webdriver.ProvidedDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class net.thucydides.core.webdriver.ProvidedDriver</error><system-err>Could not instantiate class net.thucydides.core.webdriver.ProvidedDriver&#13;
+vn.amabay.steps.serenity.HomeSteps.visit_application(HomeSteps.java:10)&#13;
+vn.amabay.features.alert.WhenUsserInteractAlertPop.when_alertbox_pops_up_then_click_OK_button_to_proceed(WhenUsserInteractAlertPop.java:29)&#13;
+</system-err></testcase><testcase classname="vn.amabay.features.alert.WhenUsserInteractAlertPop" name="When prompt box pops up then click OK button to proceed"/><testcase classname="vn.amabay.features.alert.WhenUsserInteractAlertPop" name="When confirm box pops up then click OK button to proceed"/><testcase classname="vn.amabay.features.alert.WhenUsserInteractAlertPop" name="When confirm box pops up then click cancel button to proceed"/><testcase classname="vn.amabay.features.alert.WhenUsserInteractAlertPop" name="When prompt box pops up then click cancel button to proceed"><error message="No frame element found by name or id iframeResult&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CN-PTCN-HIENNT2', ip: '10.2.68.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchFrameException">No frame element found by name or id iframeResult
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CN-PTCN-HIENNT2', ip: '10.2.68.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown</error><system-err>No frame element found by name or id iframeResult
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CN-PTCN-HIENNT2', ip: '10.2.68.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown&#13;
+vn.amabay.pages.AlertPage.answerAlertPopup(AlertPage.java:11)&#13;
+vn.amabay.steps.AlertSteps.anser_the_promt(AlertSteps.java:10)&#13;
+vn.amabay.features.alert.WhenUsserInteractAlertPop.when_prompt_box_pops_up_then_click_cancel_button_to_proceed(WhenUsserInteractAlertPop.java:50)&#13;
+</system-err></testcase></testsuite>

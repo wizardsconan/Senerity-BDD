@@ -1,2 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"When register new account","Launch web application","FAILURE","2019-08-26T13:48:39.42+07:00[Asia/Bangkok]","0.0","48.03"
+"When open link the web","Launch web application","ERROR","2019-09-17T16:00:02.79+07:00[Asia/Bangkok]","0.0","11.56"
+"When register new account","Verify variable session","FAILURE","2019-09-17T16:00:17.12+07:00[Asia/Bangkok]","0.0","0.57"
+"When register new account","Launch web application","FAILURE","2019-09-17T16:00:17.824+07:00[Asia/Bangkok]","0.0","12.35"
+"When register new account","Verify variable session1","FAILURE","2019-09-17T16:00:33.019+07:00[Asia/Bangkok]","0.0","0.23"

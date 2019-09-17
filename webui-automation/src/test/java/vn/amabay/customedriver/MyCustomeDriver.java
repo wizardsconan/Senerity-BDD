@@ -1,9 +1,11 @@
-/*package vn.amabay.customedriver;
+package vn.amabay.customedriver;
 
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import net.thucydides.core.webdriver.DriverSource;
@@ -19,7 +21,7 @@ public class MyCustomeDriver implements DriverSource {
 		        	//2 capaibilities
 		        	DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		        	capabilities.setCapability(FirefoxDriver.PROFILE, profile);
-		        //	capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+		        	capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.DISMISS);
 		        	//3.options
 		        	FirefoxOptions options = new FirefoxOptions(capabilities);
 		        	// FirefoxOptions
@@ -35,4 +37,4 @@ public class MyCustomeDriver implements DriverSource {
     public boolean takesScreenshots() {
         return true;
     }
-}*/
+}

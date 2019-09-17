@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="vn.amabay.features.browser.WhenOpenLinkTheWeb" skipped="0" tests="1" time="11.56" timestamp="2019-09-17 04:00:02"><testcase classname="vn.amabay.features.browser.WhenOpenLinkTheWeb" name="Launch web application"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+vn.amabay.MyPageObject.cutTextFrom(MyPageObject.java:47)&#13;
+vn.amabay.pages.PracticePage.cutString(PracticePage.java:16)&#13;
+vn.amabay.steps.serenity.PracticeSteps.cut(PracticeSteps.java:15)&#13;
+vn.amabay.features.browser.WhenOpenLinkTheWeb.launch_web_application(WhenOpenLinkTheWeb.java:37)&#13;
+</system-err></testcase></testsuite>

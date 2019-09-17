@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: vn.amabay.features.browser.WhenOpenLinkTheWeb
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.253 sec <<< FAILURE! - in vn.amabay.features.browser.WhenOpenLinkTheWeb
+launch_web_application(vn.amabay.features.browser.WhenOpenLinkTheWeb)  Time elapsed: 11.511 sec  <<< ERROR!
+java.lang.NullPointerException
+	at vn.amabay.features.browser.WhenOpenLinkTheWeb.launch_web_application(WhenOpenLinkTheWeb.java:37)
+
