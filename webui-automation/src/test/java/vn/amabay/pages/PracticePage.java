@@ -17,7 +17,7 @@ public class PracticePage extends MyPageObject {
 			// TODO Auto-generated method stub
 			
 		}
-		public void pasteString() {
+		public void paste() {
 			pasteTextInto(pasteText);
 		}
 }

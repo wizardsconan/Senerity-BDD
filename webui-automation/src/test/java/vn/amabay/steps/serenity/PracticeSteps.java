@@ -7,17 +7,17 @@ public class PracticeSteps {
 	PracticePage practicePage;
 	
 	@Step
-	public void enterSearch(String inputtext) {
-		practicePage.inputSearch(inputtext);
+	public void enterSearch() {
+		practicePage.inputSearch(null);
 	}
 	@Step
 	public void cut(String text) {
-		practicePage.cutString(null);
+		practicePage.cutString(text);
 		
 	}
 	@Step
 	public void paste() {
-		practicePage.pasteString();
+		practicePage.paste();
 		
 	}
 	

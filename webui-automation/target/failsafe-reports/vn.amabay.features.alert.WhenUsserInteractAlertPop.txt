@@ -1,19 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: vn.amabay.features.alert.WhenUsserInteractAlertPop
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 84.803 sec <<< FAILURE! - in vn.amabay.features.alert.WhenUsserInteractAlertPop
-when_alertbox_pops_up_then_click_OK_button_to_proceed(vn.amabay.features.alert.WhenUsserInteractAlertPop)  Time elapsed: 7.578 sec  <<< ERROR!
-net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class net.thucydides.core.webdriver.ProvidedDriver (Could not instantiate the custom webdriver provider of type mydriver). See below for more details.
-	at vn.amabay.features.alert.WhenUsserInteractAlertPop.when_alertbox_pops_up_then_click_OK_button_to_proceed(WhenUsserInteractAlertPop.java:29)
-
-when_prompt_box_pops_up_then_click_cancel_button_to_proceed(vn.amabay.features.alert.WhenUsserInteractAlertPop)  Time elapsed: 13.872 sec  <<< ERROR!
-org.openqa.selenium.NoSuchFrameException: 
-No frame element found by name or id iframeResult
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CN-PTCN-HIENNT2', ip: '10.2.68.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: driver.version: unknown
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CN-PTCN-HIENNT2', ip: '10.2.68.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: driver.version: unknown
-	at vn.amabay.features.alert.WhenUsserInteractAlertPop.when_prompt_box_pops_up_then_click_cancel_button_to_proceed(WhenUsserInteractAlertPop.java:50)
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.636 sec - in vn.amabay.features.alert.WhenUsserInteractAlertPop
