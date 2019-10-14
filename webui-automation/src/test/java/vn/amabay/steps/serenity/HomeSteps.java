@@ -14,6 +14,10 @@ public class HomeSteps {
 	public void click_on_login_link() {
 		onHomePage.clickOnLoginLink();
 	}
+	@Step
+	public void upload(String pathFile) {
+		onHomePage.uploadFileToSomeWhere(pathFile);
+	}
 /*	public void select_states(String... states) {
 		// TODO Auto-generated method stub
 		onHomePage.SelectMultiState(states);

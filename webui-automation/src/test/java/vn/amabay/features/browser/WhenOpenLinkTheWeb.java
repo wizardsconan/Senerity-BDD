@@ -26,16 +26,24 @@ public class WhenOpenLinkTheWeb {
 	@Test
 	@WithTag("open")
 	public void launch_web_application() {
+	//	String pathFile="C:\\Users\\hiennt26\\Documents\\Lightshot\\1557471852123.JPEG";
 		jacob.visit_application();
+		practiceSteps.copyByMouse("Teaching webdriver online");
+		jacob.click_on_login_link();
+		practiceSteps.pasteByMouse();
 		/*
 		 * try { Thread.sleep(3000); } catch (InterruptedException e) { // TODO
 		 * Auto-generated catch block e.printStackTrace(); }
 		 */
-		practiceSteps.cut("Teaching webdriver online");
-		jacob.click_on_login_link();
-		practiceSteps.paste();
+		//practiceSteps.cut("Teaching webdriver online");
+		//jacob.click_on_login_link();
+		//practiceSteps.paste();
 
 		// jacob.select_states("Alaska","New Mexico");
-	}
+		//jacob.upload(pathFile);
+		//practiceSteps.scrollToElement();
+		//practiceSteps.jsclick();
+		//practiceSteps.highLightElement();
+	} 
 
 }

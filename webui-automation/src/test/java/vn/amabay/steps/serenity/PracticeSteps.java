@@ -11,15 +11,32 @@ public class PracticeSteps {
 		practicePage.inputSearch(null);
 	}
 	@Step
-	public void cut(String text) {
-		practicePage.cutString(text);
+	public void copyByMouse(String value) {
+		practicePage.openContentMenuOnSearcBox(value);
+		practicePage.copyTextFromSearchBoxMouse();
 		
 	}
 	@Step
 	public void paste() {
-		practicePage.paste();
+		practicePage.pasteToEmailLoginByMouse();
 		
 	}
-	
+	@Step
+	public void pasteByMouse() {
+		practicePage.pasteToEmailLoginByMouse();
+		
+	}
+	@Step
+	public void jsclick() {
+		practicePage.jsclickButton();
+	}
+	@Step
+	public void scrollToElement() {
+		practicePage.scrollToFooter();
+	}
+	@Step
+	public void highLightElement() {
+		practicePage.highLight();
+	}
 
 }
